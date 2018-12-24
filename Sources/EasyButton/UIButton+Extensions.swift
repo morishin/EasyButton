@@ -15,7 +15,7 @@ extension UIButton {
         setCornerRadius(radius: cornerRadius)
     }
 
-    public func setBackgroundColor(color: UIColor, for state: UIControlState) {
+    public func setBackgroundColor(color: UIColor, for state: UIControl.State) {
         UIGraphicsBeginImageContext(CGSize(width: 1, height: 1))
         defer { UIGraphicsEndImageContext() }
         guard let context = UIGraphicsGetCurrentContext() else { return assertionFailure("Failed to get current context") }
